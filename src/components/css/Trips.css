@@ -1,0 +1,283 @@
+/* Trips Section */
+.trips-container {
+  padding: 20px;
+  min-height: 100vh;
+  margin-top: 65px;
+  background-color: #fdcf03;
+  color: #333;
+}
+
+.trips-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #030303;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.trips-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trip-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.trip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trip-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.trip-card:hover .trip-image {
+  opacity: 0.85;
+}
+
+.trip-title {
+  margin-top: 15px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.trip-details {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+}
+
+.trip-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.trip-column {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fdcf03;
+}
+
+.itinerary-title {
+  color: #fdcf03;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-left: 15px;
+}
+
+.itinerary-list {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.itinerary-day {
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #fdcf03;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-day p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.day-count {
+  color: #a83e00;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.text-medium {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #313131;
+}
+
+.trip-booking {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.trip-card button {
+  padding: 8px 20px;
+  background-color: #fdcf03;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.trip-card button:hover {
+  background-color: #fde403;
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trips-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trip-card {
+    width: 90%;
+  }
+
+  .trip-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.trips-container.blurred {
+  filter: blur(5px); /* Blurs only the background */
+  pointer-events: none; /* Prevents interaction with background elements */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Keeps it above all other elements */
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 800px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out; /* Smooth appearance effect */
+}
+
+/* Close Button (Top-Right Corner) */
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fdcf03;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.modal-close-button:hover {
+  transform: scale(1.2);
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fdcf03;
+  margin-bottom: 15px;
+}
+
+/* Modal Description */
+.modal-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Contact Options */
+.contact-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Contact Option Styling */
+.contact-option {
+  flex: 1;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-option:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Contact Icon Styles */
+.call-icon {
+  color: #007bff;
+}
+
+.whatsapp-icon {
+  color: #18fa6b;
+}
+
+.email-icon {
+  color: #ff5733;
+}
+
+.contact-option h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contact-option h5 {
+  margin: 15px 0 5px;
+  font-size: 1.0rem;
+  color: #777777;
+}
+
+.contact-option p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,95 @@
+/* Gallery Section */
+.gallery-section {
+  font-family: 'Franklin Gothic';
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #000;
+  margin-top: 35px;
+}
+
+.gallery-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fdcf03;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gallery-subheader {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Gallery Grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Gallery Item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery Image */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Overlay */
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Place Name and Description */
+.gallery-content {
+  text-align: left;
+  color: #fff;
+}
+
+.place-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fdcf03;
+}
+
+.place-description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}

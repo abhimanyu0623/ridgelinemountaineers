@@ -1,0 +1,80 @@
+.offer-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  height: auto;
+}
+
+.offer-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fdcf03;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.offer-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.offer-track {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  animation: scroll-left 20s linear infinite; /* Continuous scrolling */
+}
+
+.offer-card {
+  min-width: 300px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 10px;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.offer-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.offer-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.offer-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.offer-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Animation for scrolling */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move the track left by its full width */
+  }
+}
+
+.offer-slider:hover .offer-track {
+  animation-play-state: paused;
+}

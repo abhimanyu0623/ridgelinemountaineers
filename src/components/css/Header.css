@@ -1,0 +1,48 @@
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    align-items: center; /* Ensures vertical centering */
+    padding: 8px 16px; /* Adjust padding as needed */
+    background: #ffffff;
+    color: rgb(10, 10, 10);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1; /* Prevent any unnecessary vertical spacing */
+}
+
+.header nav {
+    display: flex;
+    align-items: center; /* Aligns nav links vertically */
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; /* Reset default margin and padding */
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    display: inline-block; 
+    color: #070707;
+    font-weight: 400;
+    font-family: 'Franklin Gothic';
+    font-size: large;
+}
+
+.header nav ul li a:hover {
+    color: #fdcf03;
+}

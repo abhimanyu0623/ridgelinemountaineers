@@ -1,0 +1,119 @@
+.why-choose-us {
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .why-choose-us-header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fdcf03;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .why-choose-us p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card i {
+    font-size: 3rem;
+    color: #fdcf03;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 500px;  /* Give it a fixed height */
+    padding: 0;  /* Removed padding to avoid issues */
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: -25px;
+  }
+  
+  .video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 65%;
+    left: 38%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: left; /* Center text */
+    z-index: 1;
+  }
+  
+  .overlay-content h2 {
+    font-size: 45px;
+    margin-bottom: 15px; /* Added some spacing below the title */
+    color: #fdcf03;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(2, 2, 2, 0.7); /* Added a shadow effect */
+  }
+  
+  .overlay-content p {
+    font-size: 22px;
+    margin-bottom: 25px; /* Increased spacing */
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px rgba(2, 2, 2, 0.7); /* Stronger shadow */
+  }
+  
+  .schedule-call-btn {
+    padding: 12px 25px; /* Adjusted padding for button */
+    font-size: 20px; /* Increased font size */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow to button */
+  }
+  
+  .schedule-call-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  }
+  
+  

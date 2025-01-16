@@ -1,0 +1,140 @@
+/* Global Styles to Make the Footer Stick to the Bottom */
+html, body {
+  height: 100vh;
+  margin: 0;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 0px 0;
+  margin-top: auto; /* Ensures the footer will be pushed to the bottom */
+}
+
+/* Top part - Two equal sections */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align content to the top */
+  padding: 10px 20px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-middle {
+  flex: 1;
+}
+
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.footer-social-icons {
+  margin-top: 20px;
+}
+
+.footer-social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-social-icons a:hover {
+  color: #007bff;
+}
+
+/* Align text left in the bottom part */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #333;
+}
+
+.footer-text,
+.footer-terms {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-text a {
+  color: #aaa;
+}
+
+.footer-text a:hover {
+  color: white;
+}
+
+.footer-terms a {
+  color: #aaa;
+}
+
+.footer-terms a:hover {
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer-top {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-left {
+    flex: none;
+    margin-bottom: 20px;
+  } 
+  .footer-right {
+      flex: none;
+      margin-bottom: 20px;
+  }
+
+  .footer-links {
+      display: block;
+      text-align: center;
+  }
+
+  .footer-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* Ensure the footer takes the full width and stays at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
